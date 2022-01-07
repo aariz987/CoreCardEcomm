@@ -1,0 +1,45 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Profile{% endblock title %}
+{% block main-content %}
+
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+<section id="contact" style="margin-top:70px;">
+      <div class="section-content">
+        <h1 class="section-header"><span id="getin">Get in</span> <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+        
+      </div>
+      <div class="contact-section">
+      <div class="container">
+        <form action="{% url 'contactus' %}" method="POST">
+          {% csrf_token %}
+          <div class="col-md-6 form-line">
+              
+              <div class="form-group">
+                <label for="exampleInputEmail">Email Address</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+              </div>  
+              
+            </div>
+
+            <div class="col-md-6" style="margin-top:30px;">
+              <div class="form-group">
+                <label for ="description"> Message</label>
+                <textarea name="message"  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+              </div>
+              <div>
+
+                <input type="submit" class="btn btn-primary submit">  </input>
+              </div>
+              
+          </div>
+        </form>
+
+        
+
+      </div>
+    </section>
+{% endblock main-content %}

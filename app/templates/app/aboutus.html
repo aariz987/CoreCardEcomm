@@ -1,0 +1,47 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Profile{% endblock title %}
+{% block main-content %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<section class="our-webcoderskull padding-lg">
+  <div class="container">
+    <div class="row heading heading-icon">
+        <h2>Our Team</h2>
+    </div>
+    <ul class="row">
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="https://media-exp1.licdn.com/dms/image/C5603AQFFQeScjfV-ZA/profile-displayphoto-shrink_400_400/0/1632459658435?e=1646870400&v=beta&t=Tppy_6NS-F6kkIux2akoohBQ-IoJMYQ65tSAli6rZTo" class="img-responsive" alt=""></figure>
+            <h3><a href="http://www.webcoderskull.com/">Aariz Akhtar</a></h3>
+            
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="https://media-exp1.licdn.com/dms/image/C5603AQFR-25ZraT1Jw/profile-displayphoto-shrink_400_400/0/1634232023855?e=1646870400&v=beta&t=2Jg5AXzgDqei-68pNER4JzMFbBssmrwR6bGukW2U0Pg" class="img-responsive" alt=""></figure>
+            <h3><a href="#">Shubham Bagde </a></h3>
+            
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{% static 'app/images/anshu.jpeg' %}" class="img-responsive" alt=""></figure>
+            <h3><a href="http://www.webcoderskull.com/">Anshu Kumari </a></h3>
+            
+            
+          </div>
+       </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{% static 'app/images/rekha.jpg' %}" class="img-responsive" alt=""></figure>
+            <h3><a href="http://www.webcoderskull.com/">Rekha </a></h3>
+            
+            
+          </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% endblock main-content %}
